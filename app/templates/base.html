@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }} - Student Journal</title>
+      {% else %}
+      <title>Welcome to Student Journal</title>
+      {% endif %}
+    </head>
+    <body>
+        <div>
+            <a href="/index">Главная</a>
+            <a href="/login">Войти</a>
+        </div>
+        
+        <hr>
+        
+        {% block content %}{% endblock %}
+
+    </body>
+</html>
